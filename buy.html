@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/buy.css">
+    <title>Купить - Imprint memory</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__menu">
+
+                <a href="index.html" class="header__logo-link">
+                    <img src="./images/header-img/IMG_18222.svg" alt="" class="header__logo-img">
+                </a>
+
+                <div class="header__menu__body">
+                    <a class="header__menu__body-link" href="index.html">О продукте</a>
+                    <a class="header__menu__body-link" href="index.html">Видеоинструкция</a>
+                    <a class="header__menu__body-link" href="index.html">Конвертер файлов</a>
+                    <a class="header__menu__body-link" href="index.html">Отзывы</a>
+                    <a class="header__menu__body-link" href="index.html">Контакты</a>
+                </div>
+                <div class="header__menu__contacts">
+                    <a href="#" class="header__menu__contacts-link"><img src="./images/header-img/logo instagram.svg" alt=""
+                            class="header__menu__contacts-img"></a>
+                    <a href="#" class="header__menu__contacts-link"><img src="./images/header-img/loon-tiktok.svg" alt=""
+                            class="header__menu__contacts-img"></a>
+                    <a href="#" class="header__menu__contacts-link"><img src="./images/header-img/loon-vk.svg" alt=""
+                            class="header__menu__contacts-img"></a>
+                    <a href="#" class="header__menu__contacts-link"><img src="./images/header-img/loon-yt.svg" alt=""
+                            class="header__menu__contacts-img"></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="wrapper">
+        <header class="header-adaptive">
+            <!-- Шапка -->
+            <div class="logo">
+                <a href="index.html">
+                    <img src="./images/header-img/IMG_18222.svg" alt="" width="90">
+                </a>
+            </div>
+
+            <!-- Меню сайта -->
+            <nav class="nav">
+                <ul>
+                    <li><a class="header__menu__body-link" href="index.html">О продукте</a></li>
+                    <li><a class="header__menu__body-link" href="index.html">Видеоинструкция</a></li>
+                    <li><a class="header__menu__body-link" href="index.html">Конвертер файлов</a></li>
+                    <li><a class="header__menu__body-link" href="index.html">Отзывы</a></li>
+                    <li><a class="header__menu__body-link" href="index.html">Контакты</a></li>
+                </ul>
+            </nav>
+
+            <!-- Иконка бургерменю -->
+            <div class="burger">
+                <span></span>
+            </div>
+        </header>
+    </div>
+    <section class="buy">
+        <div class="container">
+            <h1 class="buy__title">Оформление закака</h1>
+            <div class="buy__form">
+                <form action="#" method="post" class="buy-form">
+                    <label for="fio">ФИО получателя *</label>
+                    <br>
+                    <input type="text" id="fio" required name="name" placeholder="Укажите ФИО получателя, кто будет получать заказ">
+                    <br>
+                    <label for="phoneNumber">Номер телефона *</label>
+                    <br>
+                    <input type="tel" id="phoneNumber" required name="phone" placeholder="+7 (___) ___-__-__">
+                    <br>
+                    <label for="email">E-mail *</label>
+                    <br>
+                    <input type="email" id="email" required name="email" placeholder="Электроная почта получателя">
+                    <br>
+
+                    <label for="region">Регион доставки *</label>
+                    <input list= "region-lst" id="region-input" name="adress"  type="text"/>
+                    <datalist id="region-lst">
+                        
+                    </datalist>
+
+                    <label for="location">Населеный пункт доставки *</label>
+                    <input list="location-lst" id="location-input" name="adress"  type="text"/>
+                    <datalist id="location-lst">
+                        
+                    </datalist>
+
+
+                    <br>
+                    
+                    
+                </form>
+                <div class="buy__form__count">
+                    <label for="counter">Количество </label>
+                    <button type="button" id="btn_dec" onclick="decrementCounter()">
+                    <img src="./images/minus.svg" alt="">
+                    </button>
+                    <input type="text" id="counter" value="1" readonly>
+                    <button type="button" id="btn_incr" onclick="incrementCounter()">
+                    <img src="./images/plus.svg" alt="">
+                    </button>
+                    <div class="buy__form__info">
+                        <h2 class="buy__form-total">Итого: <span>4999</span> ₽ ± 350 ₽ доставка</h2>
+                    </div>
+                </div>
+                <div class="buy-button">
+                    Оплатить
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="js/cities.js"></script>
+    <script src="js/regions.js"></script>
+    <script  src="js/buy.js"></script>
+    <script>
+        document.querySelector('.burger').addEventListener('click', function() {
+            this.classList.toggle('active');
+            document.querySelector('.nav').classList.toggle('open');
+        })
+    </script>
+</body>
+</html>

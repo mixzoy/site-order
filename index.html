@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link type="image/png" sizes="16x16" rel="icon" href="images/icon.png">
+    <link href = "fonts/Gilroy/stylesheet.css" rel = "stylesheet" type = "text/css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="js/jquery-3.7.0.min.js"></script>
+    <script>
+        function slowScroll (id) {
+            var offset = 0;
+            $('html, body').animate ({
+                scrollTop: $(id).offset ().top - offset
+            }, 500)
+            return false;
+        }
+    </script>
+    <title>Imprint memory</title>
+</head>
+
+<body>
+    
+    <div class="touch-container"></div>
+    <section class="main-section">
+        <header class="header">
+            <div class="container">
+                <div class="header__menu">
+    
+                    <a href="index.html" class="header__logo-link">
+                        <img src="./images/header-img/IMG_18222.svg" alt="" class="header__logo-img">
+                    </a>
+    
+                    <div class="header__menu__body">
+                        <a class="header__menu__body-link" href="javascript://0" onclick="slowScroll ('#main-product')">О продукте</a>
+                        <a class="header__menu__body-link" href="javascript://0" onclick="slowScroll ('#main-video')">Видеоинструкция</a>
+                        <a class="header__menu__body-link" href="javascript://0" onclick="slowScroll ('#main-video')">Конвертер файлов</a>
+                        <a class="header__menu__body-link" href="javascript://0" onclick="slowScroll ('#main-reviews')">Отзывы</a>
+                        <a class="header__menu__body-link" href="javascript://0" onclick="slowScroll ('#main-contacts')">Контакты</a>
+                    </div>
+                    <div class="header__menu__contacts">
+                        <a href="#" class="header__menu__contacts-link"><img src="./images/header-img/logo instagram.svg" alt=""
+                                class="header__menu__contacts-img"></a>
+                        <a href="#" class="header__menu__contacts-link"><img src="./images/header-img/loon-tiktok.svg" alt=""
+                                class="header__menu__contacts-img"></a>
+                        <a href="#" class="header__menu__contacts-link"><img src="./images/header-img/loon-vk.svg" alt=""
+                                class="header__menu__contacts-img"></a>
+                        <a href="#" class="header__menu__contacts-link"><img src="./images/header-img/loon-yt.svg" alt=""
+                                class="header__menu__contacts-img"></a>
+                    </div>
+                </div>
+            </div>
+    
+        </header>
+        <div class="wrapper">
+            <header class="header-adaptive">
+                <!-- Шапка -->
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="./images/header-img/IMG_18222.svg" alt="" width="90">
+                    </a>
+                </div>
+    
+                <!-- Меню сайта -->
+                <nav class="nav">
+                    <ul>
+                        <li><a class="header__menu__body-link nav-a" href="#main-product" >О продукте</a></li>
+                        <li><a class="header__menu__body-link nav-b" href="#main-video">Видеоинструкция</a></li>
+                        <li><a class="header__menu__body-link nav-c" href="#main-video">Конвертер файлов</a></li>
+                        <li><a class="header__menu__body-link nav-d" href="#main-reviews">Отзывы</a></li>
+                        <li><a class="header__menu__body-link nav-e" href="#main-contacts">Контакты</a></li>
+                    </ul>
+                </nav>
+    
+                <!-- Иконка бургерменю -->
+                <div class="burger">
+                    <span></span>
+                </div>
+            </header>
+        </div>
+        <div class="touch-container"></div>
+        <main class="main" id="main-product">
+            <div class="main-left-container">
+                <div class="main-text-container">
+    
+                    <div class="main-tittle">
+                        Акриловая цифровая <br>
+                        <span>фоторамка</span>
+                    </div>
+                    <div class="main-subtittle">
+                        Переведите ваши воспоминания на новый уровень, ощутите магию в каждом кадре.
+                    </div>
+                    
+                </div>
+                <div class="main-button">
+                    <a href="javascript://0" onclick="slowScroll ('#main-info')">Подробнее</a>
+                </div>
+            </div>
+            
+    
+            <div class="model2-container">
+                    <canvas class="model2">
+    
+                    </canvas>
+            </div>
+        </main>
+
+    </section>
+
+    <section class="main-adaptive">
+        <div class="main-subtittle-adaptive">
+            Переведите ваши воспоминания на новый уровень, ощутите магию в каждом кадре.
+        </div>
+        <div class="main-button-adaptive">
+            <span><a href="javascript://0" onclick="slowScroll ('#main-info')">Подробнее</a></span>
+        </div>
+        <div class="arrow-down">
+            <span></span>
+            <span></span>
+        </div>
+    </section>
+    </div>
+    <!-- <div class="touch-container"></div> -->
+    <section class="info" id="main-info">
+        <div class="container">
+            <h1 class="info-title">О продукте</h1>
+            <div class="info__body">
+                <div class="info__body-column-img">
+                    <img src="./images/Line.svg" alt="" height="450">
+                </div>
+                <div class="info__body-column">
+                    <!-- <div class="info__body__desc">
+                        <h3 class="info__body__desc-title1">Волшебство в ваших руках</h3>
+                        <p class="info__body__desc-text">Переведите ваши воспоминания на новый уровень, ощутите магию в
+                            каждом кадре.</p>
+                    </div> -->
+                    <div class="info__body__desc">
+                        <h3 class="info__body__desc-title2">Стильный и эстетичный дизайн</h3>
+                        <p class="info__body__desc-text">Элегантный дизайн рамки идеально впишется <br> в любой интерьер
+                            - дома или в офисе.</p>
+                    </div>
+                    <div class="info__body__desc">
+                        <h3 class="info__body__desc-title3">Подарок, созданный с любовью</h3>
+                        <p class="info__body__desc-text"> Подарите рамку своей второй половинке, другу, <br> маме -
+                            удивите их ярким презентом.</p>
+                    </div>
+                    <div class="info__body__desc">
+                        <h3 class="info__body__desc-title4 ">Праздничный настрой</h3>
+                        <p class="info__body__desc-text">Отличный выбор для Дня Рождения, годовщины, Дня Влюбленных и
+                            других праздников.</p>
+                    </div>
+                </div>
+                <div class="info__body-column-model">
+                    <canvas class="model" width="365" height="500">
+
+                    </canvas>
+                </div>
+                <div class="info__body-column">
+                    <div class="info__body__desc">
+                        <h3 class="info__body__desc-title5">Разнообразные форматы</h3>
+                        <p class="info__body__desc-text">Поддерживает MP4, AVI, MKV, JPG, BMP, PNG - выбор вашего
+                            контента бесконечен.</p>
+                    </div>
+                    <div class="info__body__desc">
+                        <h3 class="info__body__desc-title6">Простота и удобство</h3>
+                        <p class="info__body__desc-text">Компактные размеры, легкий вес и USB Type-C интерфейс
+                            обеспечивают удобство и легкость в эксплуатации</p>
+                    </div>
+                    <!-- <div class="info__body__desc">
+                        <h3 class="info__body__desc-title7">Долгое время работы</h3>
+                        <p class="info__body__desc-text">Непрерывная демонстрация до 3 часов на одной полной зарядке.
+                        </p>
+                    </div> -->
+                    <div class="info__body__desc">
+                        <h3 class="info__body__desc-title8">Качество из России</h3>
+                        <p class="info__body__desc-text">Надежность и высокое качество отечественного производителя.</p>
+                    </div>
+                </div>
+                <div class="info__body-column-img">
+                    <img src="./images/Line.svg" alt=""  height="450">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="info-adaptive">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="./images/swiper-adaptive/slide-2.png" alt=""></div>
+              <div class="swiper-slide"><img src="./images/swiper-adaptive/slide-3.png" alt=""></div>
+              <div class="swiper-slide"><img src="./images/swiper-adaptive/slide-4.png" alt=""></div>
+              <div class="swiper-slide"><img src="./images/swiper-adaptive/slide-5.png" alt=""></div>
+              <div class="swiper-slide"><img src="./images/swiper-adaptive/slide-6.png" alt=""></div>
+              <!-- <div class="swiper-slide"><img src="./images/swiper-adaptive/slide-7.png" alt=""></div> -->
+              <div class="swiper-slide"><img src="./images/swiper-adaptive/slide-8.png" alt=""></div>
+            </div>
+          </div>
+    </section>
+    <section class="price">
+        <div class="container">
+            <div class="price__wrapper">
+                <button id="btn-buy" class="button"><span></span>Купить за 5 999 ₽</button>
+            </div>
+        </div>
+    </section>
+    <section class="how" id="main-video">
+        <div class="container">
+            <h1 class="how-title">
+                Как загрузить видео?
+            </h1>
+            <div class="how__body">
+                <div class="how__body__colmun">
+                    <div class="how__body-video">
+                        <video id="player" playsinline controls>
+                            <source src="./images/vidos.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                        </video>
+                    </div>
+                    <h2 class="how__body-title">
+                        <span>
+                            Конвертируйте фото и видео:
+                        </span>
+                    </h2>
+                    <button id="how-btn"class="how__body-btn button" type="button"><span></span>Загрузить фото/видео</button>
+                    <div class="how__wrapper how__wrapper-off">
+                        <form class="how-form" enctype="multipart/form-data">
+                            <label for="video">Выберите файл</label>
+                            <input id="video" type="file" name="video">
+                            <button type="submit"><img src="./images/material-symbols_download.svg" alt=""></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <div class="bg-bottom">
+        <section class="reviews-adaptive" id="main-reviews">
+            <div class="reviews-title">
+                Отзывы
+            </div>
+            <div class="reviews-container-adaptive">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><img src="./images/swiper-adaptive/reviews-1.png" alt=""></div>
+                      <div class="swiper-slide"><img src="./images/swiper-adaptive/reviews-2.png" alt=""></div>
+                      <div class="swiper-slide"><img src="./images/swiper-adaptive/reviews-3.png" alt=""></div>
+                      <div class="swiper-slide"><img src="./images/swiper-adaptive/reviews-4.png" alt=""></div>
+                      <div class="swiper-slide"><img src="./images/swiper-adaptive/reviews-5.png" alt=""></div>
+                      <div class="swiper-slide"><img src="./images/swiper-adaptive/reviews-6.png" alt=""></div>
+                    </div>
+                  </div>
+            </div>
+        </section>
+        <section class="reviews" id="main-reviews">
+            <div class="container">
+                <h1 class="reviews-title" style="margin-left: 20px;">Отзывы</h1>
+                <div class="reviews__slider">
+                    <div class="reviews__slider-item">
+                        <div class="reviews__slider__images">
+                            <img src="images/reviews_1.webp" alt="" class="reviews__slider-img">
+                            <img src="images/reviews_2.webp" alt="" class="reviews__slider-img">
+                            <img src="images/reviews_3.webp" alt="" class="reviews__slider-img">
+                            <img src="images/reviews_4.webp" alt="" class="reviews__slider-img ">
+                        </div>
+                        
+                        <p class="reviews__slider-text">Марина В.</p>
+                        <p class="reviews__slider-text">⭐⭐⭐⭐⭐</p>
+                        <p class="reviews__slider-text">Я в восторге😻Спасибо огромное)) Все работает, инструкция на русском
+                            языке, все просто и быстро, никаких проблем. Качество видео супер💕 Упакован заказ на все 100%))
+                        </p>
+                        <p class="reviews__slider-date">02.03.2023</p>
+    
+                    </div>
+    
+                    <div class="reviews__slider-item">
+                        <div class="reviews__slider__images">
+                            <img src="images/reviews_6.jpg" alt="" class="reviews__slider-img">
+                        </div>
+                        
+                        <p class="reviews__slider-text">Нина Л.</p>
+                        <p class="reviews__slider-text">⭐⭐⭐⭐</p>
+                        <p class="reviews__slider-text">Здравствуйте!❤️ Я получила фоторамку.
+                            Я заказывала в подарок на свадьбу брата и невестки🥹❤️
+                            эмоции НЕРЕАЛЬНЫЕ🔥, упаковано на все 💯❤️! Всех удивила и все в восторге! Спасибо большое🥺🫶🏻
+                        </p>
+                        <p class="reviews__slider-date">23.04.2023</p>
+    
+                    </div>
+    
+                    <div class="reviews__slider-item">
+                        <div class="reviews__slider__images ">
+                            <img src="images/reviews_8.jpg" alt="" class="reviews__slider-img">
+                            <img src="images/reviews_9.jpg" alt="" class="reviews__slider-img">
+                        </div>
+                        
+                        <p class="reviews__slider-text">Виктория К.</p>
+                        <p class="reviews__slider-text">⭐⭐⭐⭐⭐</p>
+                        <p class="reviews__slider-text">Здравствуйте, посылочка пришла, все супер!!
+                            Рамочка безумно милая, мне очень нравится!
+                            Всё пришло очень хорошо упаковано и доставка быстрая, спасибо огромное за такую
+                            красоту!!🥹💌💌💌</p>
+                            <p class="reviews__slider-date">03.06.2023</p>
+                    </div>
+    
+                    <div class="reviews__slider-item">
+                        <div class="reviews__slider__images">
+                            <img src="images/reviews_10.jpg" alt="" class="reviews__slider-img">
+                        </div>
+                        
+                        <p class="reviews__slider-text">Анастасия И.</p>
+                        <p class="reviews__slider-text">⭐⭐⭐⭐⭐</p>
+                        <p class="reviews__slider-text">Здравствуйте! 
+                            Спасибо вам огромное! Это получился правда прекрасный подарок. По инструкции самостоятельно
+                            загрузила все фото, всё понятно было.❤️
+                            </p>
+                        <p class="reviews__slider-date">21.06.2023</p>
+                    </div>
+    
+                    <div class="reviews__slider-item">
+                        <div class="reviews__slider__images">
+                            <img src="images/reviews_11.jpg" alt="" class="reviews__slider-img">
+                        </div>
+                       
+                        <p class="reviews__slider-text">Карина К.</p>
+                        <p class="reviews__slider-text">⭐⭐⭐⭐⭐</p>
+                        <p class="reviews__slider-text">Отличная фоторамка! Оригинальный и недорогой подарок для себя или
+                            кого-то близкого. Всем советую</p>
+                        <p class="reviews__slider-date">06.07.2023</p>
+                    </div>
+    
+                    <div class="reviews__slider-item">
+                        <div class="reviews__slider__images ">
+                            <img src="images/reviews_12.jpg" alt="" class="reviews__slider-img ">
+                            <img src="images/reviews_13.jpg" alt="" class="reviews__slider-img ">
+                        </div>
+                        
+                        <p class="reviews__slider-text">Анастасия И.</p>
+                        <p class="reviews__slider-text">⭐⭐⭐⭐⭐</p>
+                        <p class="reviews__slider-text">Очень классная рамка 😍 красивая , дорогая коробка ! Звук только
+                            оставляет желать лучшего , но это не проблема. На подарок самое то 😇 спасибо продавцу</p>
+                        <p class="reviews__slider-date">25.07.2023</p>
+                    </div>
+    
+                    <div class="reviews__slider-item">
+                        <div class="reviews__slider__images">
+                            <img src="images/reviews_14.jpg" alt="" class="reviews__slider-img">
+                            <img src="images/reviews_15.jpg" alt="" class="reviews__slider-img ">
+                        </div>
+                    
+                        <p class="reviews__slider-text">Василиса И.</p>
+                        <p class="reviews__slider-text">⭐⭐⭐⭐⭐</p>
+                        <p class="reviews__slider-text">Не пожалела, что заказала😍
+                            Пришла в срок без дефектов и прочего. 
+                            Звук рамки хороший, качество видео тоже. Своё видео пока не загружала.
+    
+                            Спасибо Imprint Memory!</p>
+                            <p class="reviews__slider-date">15.05.2023</p>
+    
+                    </div>
+    
+                    <div class="reviews__slider-item">
+                        <div class="reviews__slider__images">
+                            <img src="images/reviews_16.jpg" alt="" class="reviews__slider-img">
+                        </div>
+                        
+                        <p class="reviews__slider-text">Полина В.</p>
+                        <p class="reviews__slider-text">⭐⭐⭐⭐⭐</p>
+                        <p class="reviews__slider-text">1000/10
+                            она просто восхитительная😍
+                            качество на высоте,оформление супер влюбилась в нее с первого взгляда😍😍😍</p>
+                            <p class="reviews__slider-date">25.07.2023</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contacts" id="main-contacts">
+            <div class="container">
+                <div class="contacts__body">
+    
+    
+                    <div class="contacts__body-item">
+                        <p class="contacts__body-title">info@imprintmemory.ru</p>
+                        <p class="contacts__body-text">По важным вопросам</p>
+                    </div>
+                    
+                    <div class="contacts__body-item">
+                        <button id="contacts-btn" class="button"><span></span>Написать нам</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+
+    <div id="modalWindow" class="modalWindow-off">
+
+        <div id="modalWindow-body" class="modalWindow__body-off ">      
+            <svg id="quit" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 6L6 18" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M6 6L18 18" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+            <h2 class="modalWindow__body-title">Написать нам</h2>
+            <form class="modalWindow__body__form" action="#" method="post">
+                <input type="text" placeholder="Введите имя" id="">
+                <input type="email" placeholder="Введите email" id="">
+                <textarea placeholder="Задайте вопрос или оставьте заявку на обратную связь" name="msg"
+                    id=""></textarea>
+                <button class="button"><span></span>Отправить</button>
+            </form>
+        </div>
+    </div>
+    <div id="modal" class="modal">
+        <span class="close">&times;</span>
+        <img id="modal-image" src="">
+    </div>     
+    <script src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="importmap">
+        {
+            "imports": {
+              "three": "https://unpkg.com/three@v0.149.0/build/three.module.js",
+              "three/addons/": "https://unpkg.com/three@v0.149.0/examples/jsm/"
+            }
+          }
+    </script>
+ 
+    <script type="module" src="js/script.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          spaceBetween: 30,
+          centeredSlides: true,
+          autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
+      <script>
+            document.querySelector('.burger').addEventListener('click', function() {
+                this.classList.toggle('active');
+                document.querySelector('.nav').classList.toggle('open');
+            })
+            document.querySelector('.nav-a').addEventListener('click', function() {
+                document.querySelector('.nav').classList.remove('open');
+                document.querySelector('.burger').classList.remove('active')
+            })
+            document.querySelector('.nav-b').addEventListener('click', function() {
+                document.querySelector('.nav').classList.remove('open');
+                document.querySelector('.burger').classList.remove('active')
+            })
+            document.querySelector('.nav-c').addEventListener('click', function() {
+                document.querySelector('.nav').classList.remove('open');
+                document.querySelector('.burger').classList.remove('active')
+            })
+            document.querySelector('.nav-d').addEventListener('click', function() {
+                document.querySelector('.nav').classList.remove('open');
+                document.querySelector('.burger').classList.remove('active')
+            })
+            document.querySelector('.nav-e').addEventListener('click', function() {
+                document.querySelector('.nav').classList.remove('open');
+                document.querySelector('.burger').classList.remove('active')
+            })
+
+      </script>
+      
+</body>
+
+</html>
+
